@@ -13,28 +13,36 @@ const Nav = () => {
         {location.pathname === "/art" ? (
           <div className="links">
             <Link to="/nature">NATURE</Link>
-            <Link to="/">HOME</Link>
+            <Link title="HOME" to="/">
+              <i class="fa-solid fa-house-chimney-window"></i>
+            </Link>
             <Link to="/abstract">ABSTRACT</Link>
           </div>
         ) : null}
         {location.pathname === "/nature" ? (
           <div className="links">
             <Link to="/art">ART</Link>
-            <Link to="/">HOME</Link>
+            <Link title="HOME" to="/">
+              <i class="fa-solid fa-house-chimney-window"></i>
+            </Link>
             <Link to="/abstract">ABSTRACT</Link>
           </div>
         ) : null}
         {location.pathname === "/abstract" ? (
           <div className="links">
             <Link to="/art">ART</Link>
-            <Link to="/">HOME</Link>
+            <Link title="HOME" to="/">
+              <i class="fa-solid fa-house-chimney-window"></i>
+            </Link>
             <Link to="/nature">NATURE</Link>
           </div>
         ) : null}
         {location.pathname === `/results/${query}` ? (
           <div className="nav-special">
             <SearchForm special={true} />
-            <Link to="/">HOME</Link>
+            <Link title="HOME" to="/">
+              <i class="fa-solid fa-house-chimney-window"></i>
+            </Link>
           </div>
         ) : null}
       </div>

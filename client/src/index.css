@@ -50,6 +50,7 @@
   width: 90%;
   height: 50%;
   background-color: rgb(7, 7, 7);
+  border: solid rgb(231, 231, 224) 2px;
 }
 
 .form-container form {
@@ -212,9 +213,9 @@ input[type="text"] {
   width: 90%;
 }
 .nav-special > a {
-  font-size: 2vw;
+  font-size: 30px;
+  margin-left: 5px;
   text-decoration: none;
-  padding: 2%;
   color: rgb(231, 231, 224);
 }
 /* BREAKPOINTS */
